@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مجمع المهارات العربية — Arabic Skills Hub</title>
+<meta name="description" content="أول دليل عربي لمهارات وكلاء الذكاء الاصطناعي — كل مهارة مجانية ومفتوحة، برابط GitHub وأمر تثبيت جاهز.">
+<style>
+  :root{
+    --bg:#0b1220;
+    --bg2:#0e1830;
+    --card:#111c33;
+    --card-border:#1e2c4d;
+    --text:#e8edf7;
+    --muted:#9fb0cc;
+    --cyan:#22d3ee;
+    --amber:#f5a524;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Segoe UI",Tahoma,"Noto Sans Arabic",Arial,sans-serif;
+    line-height:1.8;
+    min-height:100vh;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* Header */
+  header{
+    text-align:center;
+    padding:64px 20px 40px;
+    background:
+      radial-gradient(700px 300px at 85% -50px, rgba(34,211,238,.14), transparent 60%),
+      radial-gradient(700px 300px at 15% -50px, rgba(245,165,36,.12), transparent 60%),
+      linear-gradient(180deg,var(--bg2),var(--bg));
+    border-bottom:1px solid var(--card-border);
+  }
+  .logo{
+    font-size:2rem;font-weight:800;letter-spacing:.5px;
+    background:linear-gradient(90deg,var(--cyan),var(--amber));
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+  }
+  h1{font-size:2.6rem;font-weight:800;margin-top:10px}
+  .en-title{font-size:1.15rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+  .tagline{font-size:1.15rem;color:var(--text);max-width:640px;margin:18px auto 0}
+  .tagline-en{font-size:.95rem;color:var(--muted);max-width:640px;margin:6px auto 0}
+  /* Sections */
+  section{padding:48px 0 8px}
+  h2{font-size:1.7rem;font-weight:800;margin-bottom:6px}
+  h2 .accent{
+    background:linear-gradient(90deg,var(--cyan),var(--amber));
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+  }
+  .sec-en{color:var(--muted);font-size:.95rem;letter-spacing:1px;margin-bottom:24px}
+  .lead{color:var(--muted);max-width:760px;margin-bottom:10px}
+  /* Cards */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:18px;
+    padding-bottom:16px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:14px;
+    padding:22px;
+    display:flex;flex-direction:column;gap:8px;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .card:hover{border-color:var(--cyan);transform:translateY(-3px)}
+  .card h3{font-size:1.3rem;font-weight:800}
+  .card .en{color:var(--muted);font-size:.9rem;letter-spacing:.5px;margin-top:-8px}
+  .card p{color:#c7d2e8;font-size:1rem;flex:1}
+  .cmd{
+    direction:ltr;text-align:left;
+    background:#081020;border:1px solid var(--card-border);
+    border-radius:8px;padding:10px 12px;
+    font-family:Consolas,"Courier New",monospace;font-size:.82rem;
+    color:var(--cyan);overflow-x:auto;white-space:nowrap;
+  }
+  .card a.repo{
+    align-self:flex-start;
+    color:var(--amber);text-decoration:none;font-weight:700;font-size:.95rem;
+  }
+  .card a.repo:hover{text-decoration:underline}
+  /* Info box */
+  .box{
+    background:var(--card);border:1px solid var(--card-border);
+    border-radius:14px;padding:26px;margin-bottom:16px;
+  }
+  .box p{color:#c7d2e8}
+  .box a{color:var(--cyan);text-decoration:none;font-weight:700}
+  .box a:hover{text-decoration:underline}
+  /* Footer */
+  footer{
+    margin-top:56px;padding:28px 20px 40px;text-align:center;
+    border-top:1px solid var(--card-border);color:var(--muted);font-size:.95rem;
+  }
+  footer a{color:var(--amber);text-decoration:none;font-weight:700}
+  footer a:hover{text-decoration:underline}
+  @media (max-width:600px){
+    h1{font-size:2rem}
+    header{padding:44px 16px 30px}
+    .grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">&lt;/&gt;</div>
+  <h1>مجمع المهارات العربية</h1>
+  <div class="en-title">Arabic Skills Hub</div>
+  <p class="tagline">أول دليل عربي لمهارات وكلاء الذكاء الاصطناعي — كل مهارة مجانية ومفتوحة، برابط GitHub وأمر تثبيت جاهز.</p>
+  <p class="tagline-en">The first Arabic-first directory of AI agent skills — every skill free and open source, with a GitHub link and a ready install command.</p>
+</header>
+
+<main class="wrap">
+
+  <!-- ما هي مهارة وكيل؟ -->
+  <section id="what">
+    <h2>ما هي <span class="accent">مهارة وكيل؟</span></h2>
+    <div class="sec-en">WHAT IS AN AGENT SKILL?</div>
+    <div class="box">
+      <p>مهارة الوكيل ملف صغير يعلّم مساعد الذكاء الاصطناعي طريقة عمل معيّنة: كيف يكتب العربية بلا أخطاء، كيف يفهم لهجتك، أو كيف يرد عليك باهتمام حقيقي. تثبّتها بأمر واحد، فيتعلمها وكيلك ويستعملها كل مرة. كل المهارات هنا مجانية ومفتوحة المصدر — خذها، جرّبها، وعدّلها كما تشاء.</p>
+    </div>
+  </section>
+
+  <!-- مهاراتنا -->
+  <section id="ours">
+    <h2><span class="accent">مهاراتنا</span></h2>
+    <div class="sec-en">OUR SKILLS — BY DAGDOG TOOLS</div>
+    <div class="grid">
+
+      <article class="card">
+        <h3>حارس العربية</h3>
+        <div class="en">Arabic Guard</div>
+        <p>مهارة تمنع الذكاء الاصطناعي من كسر العربية: لا نص مقلوب، الأرقام في مكانها، واتجاه RTL سليم.</p>
+        <div class="cmd">npx skills add dagdog16-beep/arabic-guard</div>
+        <a class="repo" href="https://github.com/dagdog16-beep/arabic-guard">المستودع على GitHub ←</a>
+      </article>
+
+      <article class="card">
+        <h3>جسر اللهجات</h3>
+        <div class="en">Dialect Bridge</div>
+        <p>تجعل الوكيل يفهم اللهجات العربية ويرد بها بشكل طبيعي.</p>
+        <div class="cmd">npx skills add dagdog16-beep/dialect-bridge</div>
+        <a class="repo" href="https://github.com/dagdog16-beep/dialect-bridge">المستودع على GitHub ←</a>
+      </article>
+
+      <article class="card">
+        <h3>مُصلِح النص العربي</h3>
+        <div class="en">Arabic Text Fixer</div>
+        <p>أداة مجانية تصلّح النص العربي المقلوب/المتلخبط من ملفات PDF، محلياً 100%.</p>
+        <div class="cmd">npx skills add dagdog16-beep/arabic-text-fixer</div>
+        <a class="repo" href="https://github.com/dagdog16-beep/arabic-text-fixer">المستودع على GitHub ←</a>
+      </article>
+
+      <article class="card">
+        <h3>قلب يسمع</h3>
+        <div class="en">Listening Heart</div>
+        <p>تعلّم الوكيل قراءة الحالة العاطفية للمستخدم والرد بحضور وتعاطف، بلا عبارات جاهزة.</p>
+        <div class="cmd">npx skills add dagdog16-beep/listening-heart</div>
+        <a class="repo" href="https://github.com/dagdog16-beep/listening-heart">المستودع على GitHub ←</a>
+      </article>
+
+      <article class="card">
+        <h3>EveryMind</h3>
+        <div class="en">EveryMind</div>
+        <p>أربع مهارات وصولية تجعل ردود الوكيل أوضح لذوي صعوبات القراءة والتعلم.</p>
+        <div class="cmd">npx skills add dagdog16-beep/everymind</div>
+        <a class="repo" href="https://github.com/dagdog16-beep/everymind">المستودع على GitHub ←</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- مهارات من المجتمع -->
+  <section id="community">
+    <h2>مهارات من المجتمع — <span class="accent">قريباً</span></h2>
+    <div class="sec-en">COMMUNITY SKILLS — COMING SOON</div>
+    <div class="box">
+      <p>المجمع مفتوح لكل صانع مهارات عربي. إذا بنيت مهارة تخدم المستخدمين العرب — بأي لهجة أو مجال — تقدر تقترح إضافتها هنا بفتح <a href="https://github.com/dagdog16-beep/arabic-skills-hub/issues">Issue في مستودع المجمع على GitHub</a> مع رابط مستودعك وشرح قصير لما تفعله المهارة.</p>
+      <p style="margin-top:10px">شرطان فقط: أن تكون المهارة <strong>مجانية</strong> و<strong>مفتوحة المصدر</strong>. لا إعلانات، لا مهارات مدفوعة.</p>
+      <p style="margin-top:10px;color:var(--muted)">Community submissions open soon: if you built a free, open-source skill that serves Arabic users, propose it by opening an Issue in the hub repository.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>من <strong>Dagdog Tools</strong> — Ali Ramdani</p>
+  <p style="margin-top:6px"><a href="https://github.com/dagdog16-beep">github.com/dagdog16-beep</a></p>
+</footer>
+
+</body>
+</html>
