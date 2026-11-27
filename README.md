@@ -16,6 +16,7 @@
 | جسر اللهجات | [Dialect Bridge](https://github.com/dagdog16-beep/dialect-bridge) | تجعل الوكيل يفهم اللهجات العربية ويرد بها بشكل طبيعي | `npx skills add dagdog16-beep/dialect-bridge` |
 | مُصلِح النص العربي | [Arabic Text Fixer](https://github.com/dagdog16-beep/arabic-text-fixer) | أداة مجانية تصلّح النص العربي المقلوب/المتلخبط من ملفات PDF، محلياً 100% | `npx skills add dagdog16-beep/arabic-text-fixer` |
 | قلب يسمع | [Listening Heart](https://github.com/dagdog16-beep/listening-heart) | تعلّم الوكيل قراءة الحالة العاطفية للمستخدم والرد بحضور وتعاطف، بلا عبارات جاهزة | `npx skills add dagdog16-beep/listening-heart` |
+| قارئ الوثائق | [Arabic Document Reader](https://github.com/dagdog16-beep/arabic-doc-reader) | يقرأ أي وثيقة، يصلّح عربيتها المكسورة، ويشرحها بلغة بسيطة أو بالدارجة | `npx skills add dagdog16-beep/arabic-doc-reader` |
 | EveryMind | [EveryMind](https://github.com/dagdog16-beep/everymind) | أربع مهارات وصولية تجعل ردود الوكيل أوضح لذوي صعوبات القراءة والتعلم | `npx skills add dagdog16-beep/everymind` |
 
 ## كيف تقترح مهارة؟ — Submit a Skill
